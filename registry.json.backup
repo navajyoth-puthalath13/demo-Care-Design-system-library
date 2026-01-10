@@ -1,0 +1,8 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "care-design",
+  "tags": ["design-system"],
+  "dependencies": {},
+  "devDependencies": {},
+  "items": []
+}

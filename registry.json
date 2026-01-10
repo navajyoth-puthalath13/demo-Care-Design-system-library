@@ -1,0 +1,296 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "care-design",
+  "homepage": "https://care-design.local",
+  "items": [
+    {
+      "name": "accordion",
+      "type": "component",
+      "title": "Accordion",
+      "description": "A vertically stacked set of interactive headings that reveal content.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/accordion.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/accordion/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "component",
+      "title": "Alert",
+      "description": "Displays a callout for user attention.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/alert.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/alert/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "component",
+      "title": "Alert Dialog",
+      "description": "A modal dialog that interrupts the user with important content.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/alert-dialog.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/alert-dialog/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "component",
+      "title": "Avatar",
+      "description": "An image element with a fallback for representing the user.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/avatar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/avatar/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "component",
+      "title": "Badge",
+      "description": "Displays a badge or a component that looks like a badge.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/badge.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/badge/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "component",
+      "title": "Button",
+      "description": "A customizable button component from the Care design system.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/button.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/button/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "component",
+      "title": "Card",
+      "description": "Displays a card with header, content, and footer.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/card/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "component",
+      "title": "Checkbox",
+      "description": "A control that allows the user to toggle between checked and unchecked.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/checkbox.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/checkbox/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "component",
+      "title": "Dialog",
+      "description": "A window overlaid on the primary content.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/dialog.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/dialog/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "component",
+      "title": "Dropdown Menu",
+      "description": "Displays a menu to the user triggered by a button.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/dropdown-menu.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/dropdown-menu/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "component",
+      "title": "Input",
+      "description": "A text input field for user data entry.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/input.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/input/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "component",
+      "title": "Label",
+      "description": "Renders an accessible label associated with form controls.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/label.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/label/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "component",
+      "title": "Select",
+      "description": "Displays a list of options for the user to pick from.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/select.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/select/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "component",
+      "title": "Switch",
+      "description": "A control that allows the user to toggle between on and off.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/switch.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/switch/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "component",
+      "title": "Tabs",
+      "description": "A set of layered sections of content, one at a time.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/tabs/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "component",
+      "title": "Textarea",
+      "description": "A multi-line text input field.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/textarea/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "component",
+      "title": "Tooltip",
+      "description": "A popup that displays information related to an element.",
+      "category": "Components",
+      "files": [
+        {
+          "path": "src/components/ui/tooltip.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/registry/tooltip/preview.tsx",
+          "type": "registry:preview"
+        }
+      ]
+    }
+  ]
+}
