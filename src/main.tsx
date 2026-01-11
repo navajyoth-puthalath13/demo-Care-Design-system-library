@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './index.css'
 import App from './App'
 import RegistryList from './pages/RegistryList'
@@ -17,7 +17,7 @@ createRoot(rootEl).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Navigate to="/registry" replace />} />
         <Route path="/registry" element={<RegistryLayout />}>
           <Route index element={<RegistryList />} />
           <Route path="colors" element={<ColorTokens />} />

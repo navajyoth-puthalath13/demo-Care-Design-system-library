@@ -15,11 +15,9 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Navigate to="/registry" replace />} />
-        <Route path="/registry" element={<RegistryLayout />}>
-          <Route index element={<RegistryList />} />
-          <Route path="colors" element={<ColorTokens />} />
-          <Route path=":name" element={<RegistryItem />} />
-        </Route>
+        <Route path="/registry" element={<RegistryList />} />
+        <Route path="/colors" element={<ColorTokens />} />
+        <Route path="/registry/:name" element={<RegistryItem />} />
       </Routes>
     </BrowserRouter>
   )

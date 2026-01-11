@@ -359,5 +359,25 @@
         }
       ]
     }
+  ],
+  "components": [
+    "accordion",
+    "alert",
+    "alert-dialog",
+    "avatar",
+       "badge",
+    "breadcrumb",
+    "button",
+    "card",
+    "checkbox",
+    "dialog",
+    "dropdown-menu",
+    "input",
+    "label",
+    "select",
+    "switch",
+    "tabs",
+    "textarea",
+    "tooltip"
   ]
 }
