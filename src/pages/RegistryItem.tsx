@@ -107,7 +107,7 @@ export default function RegistryItemPage() {
         {item.description || 'Component from the Care design system.'}
       </p>
 
-      <div className="space-y-3">
+      <div className="mt-4 space-y-3">
         <div className="border rounded-lg bg-card/60">
           <div className="flex items-center justify-between px-4 py-2.5 border-b">
             <h3 className="text-base font-medium">Live preview</h3>
