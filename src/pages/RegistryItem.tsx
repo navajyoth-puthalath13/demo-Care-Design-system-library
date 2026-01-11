@@ -1,5 +1,14 @@
 import { useEffect, useState, Suspense } from 'react'
 import { useParams, Link } from 'react-router-dom'
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from '@/components/ui/breadcrumb'
+
 
 type RegistryFile = {
   path: string
@@ -14,7 +23,7 @@ type RegistryItem = {
   files?: RegistryFile[]
 }
 
-export default function RegistryItem() {
+export default function RegistryItemPage() {
   const { name } = useParams<{ name: string }>()
   const [item, setItem] = useState<RegistryItem | null>(null)
   const [Preview, setPreview] = useState<null | React.ComponentType<any>>(null)
@@ -92,18 +101,11 @@ export default function RegistryItem() {
   }
 
   return (
-    <div className="p-4 space-y-3">
-      <header className="flex items-center justify-between gap-4">
-        <div>
-          <h1 className="text-xl font-semibold tracking-tight">{item.title || item.name}</h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {item.description || 'Component from the Care design system.'}
-          </p>
-        </div>
-        <Link to="/registry" className="text-sm text-muted-foreground hover:underline">
-          All components
-        </Link>
-      </header>
+    <div className="p-8">
+      <h1 className="text-xl font-semibold tracking-tight">{item.title || item.name}</h1>
+      <p className="mt-1 text-sm text-muted-foreground">
+        {item.description || 'Component from the Care design system.'}
+      </p>
 
       <div className="space-y-3">
         <div className="border rounded-lg bg-card/60">
