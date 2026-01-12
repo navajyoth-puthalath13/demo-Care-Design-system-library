@@ -176,7 +176,7 @@ export default function RegistryItemPage() {
               Install this component from the shadcn/ui CLI:
             </p>
             <pre className="rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm text-gray-800 font-mono overflow-x-auto shadow-sm">
-              <code>{`pnpm dlx shadcn@latest add ${item.name}`}</code>
+              <code>{`pnpm dlx shadcn@latest add ${REGISTRY_URL}/r/${item.name}.json`}</code>
             </pre>
           </div>
         </section>
