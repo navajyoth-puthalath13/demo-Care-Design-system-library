@@ -1,14 +1,7 @@
 import { useEffect, useState, Suspense } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb'
 
+const REGISTRY_URL = "https://demo-care-design-system-library-7ej8-nt7sodsao.vercel.app"
 
 type RegistryFile = {
   path: string
