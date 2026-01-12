@@ -1,8 +1,6 @@
 import { useEffect, useState, Suspense } from 'react'
 import { useParams, Link } from 'react-router-dom'
 
-const REGISTRY_URL = "https://demo-care-design-system-library-7ej8-nt7sodsao.vercel.app"
-
 type RegistryFile = {
   path: string
   content?: string
@@ -16,7 +14,7 @@ type RegistryItem = {
   files?: RegistryFile[]
 }
 
-export default function RegistryItemPage() {
+export default function RegistryItem() {
   const { name } = useParams<{ name: string }>()
   const [item, setItem] = useState<RegistryItem | null>(null)
   const [Preview, setPreview] = useState<null | React.ComponentType<any>>(null)
@@ -94,13 +92,20 @@ export default function RegistryItemPage() {
   }
 
   return (
-    <div className="p-8">
-      <h1 className="text-xl font-semibold tracking-tight">{item.title || item.name}</h1>
-      <p className="mt-1 text-sm text-muted-foreground">
-        {item.description || 'Component from the Care design system.'}
-      </p>
+    <div className="p-4 space-y-3">
+      <header className="flex items-center justify-between gap-4">
+        <div>
+          <h1 className="text-xl font-semibold tracking-tight">{item.title || item.name}</h1>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {item.description || 'Component from the Care design system.'}
+          </p>
+        </div>
+        <Link to="/registry" className="text-sm text-muted-foreground hover:underline">
+          All components
+        </Link>
+      </header>
 
-      <div className="mt-4 space-y-3">
+      <div className="space-y-3">
         <div className="border rounded-lg bg-card/60">
           <div className="flex items-center justify-between px-4 py-2.5 border-b">
             <h3 className="text-base font-medium">Live preview</h3>
@@ -176,7 +181,7 @@ export default function RegistryItemPage() {
               Install this component from the shadcn/ui CLI:
             </p>
             <pre className="rounded-lg bg-gray-50 border border-gray-200 px-3 py-2.5 text-sm text-gray-800 font-mono overflow-x-auto shadow-sm">
-              <code>{`pnpm dlx shadcn@latest add ${REGISTRY_URL}/r/${item.name}.json`}</code>
+              <code>{`pnpm dlx shadcn@latest add ${item.name}`}</code>
             </pre>
           </div>
         </section>
